@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My_task</title>
+	
+		<script>
+			function addition() 
+			{
+				let a = parseInt(document.getElementById('a').value);
+				let b = parseInt(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+			let c = a + b;
+ 
+				document.getElementById('result').innerHTML = a + " + " + b + " = " + c;
+			}
+
+				function minus() 
+				{
+					let a = parseInt(document.getElementById('a').value);
+					let b = parseInt(document.getElementById('b').value);
+	 
+				if (isNaN(a)==true) a=0;
+				if (isNaN(b)==true) b=0;
+	 
+				let c = a - b;
+	 
+					document.getElementById('result').innerHTML = a + " - " + b + " = " + c;
+				}
+
+					function multiplication() 
+					{
+						let a = parseInt(document.getElementById('a').value);
+						let b = parseInt(document.getElementById('b').value);
+		 
+					if (isNaN(a)==true) a=0;
+					if (isNaN(b)==true) b=0;
+
+					let c = a * b;
+
+					 	document.getElementById('result').innerHTML = a + " * " + b + " = " + c;
+					}
+									
+						function division() 
+						{
+							let a = parseInt(document.getElementById('a').value);
+							let b = parseInt(document.getElementById('b').value);
+			 
+						if (isNaN(a)==true) a=0;
+						if (isNaN(b)==true) b=0;
+						
+						let c = a / b;
+
+					 	document.getElementById('result').innerHTML = a + " / " + b + " = " + c;
+						}
+		</script>
+
+</head>
+<body>
+		<style type="text/css">
+		body {
+			width: 300px;
+			background-color: rgb(180,180,200);
+		}
+
+		input{background-color:rgb(220,220,150);
+			 border: 1px ;
+			 border-collapse: separate;
+			}
+			</style>
+	<header>
+		<b>Введи оба числа и нажми тип операции</b>
+		<form>
+			<input id="a" type="text" value="0">  <i>Первый аргумент</i><br>
+			<input id="b" type="text" value="0">  <i>Второй аргумент</i><br> <br>
+			<input type="button" name="Число 1" value="+" onclick="addition();"><br>
+			<input type="button" value="-" onclick="minus();"><br>
+			<input type="button" value="*" onclick="multiplication();"><br> 
+			<input type="button" value="/" onclick="division();"><br>
+		</form>
+	</header>
+		<div id="result"></div>
+
+
+</body>
+</html>
